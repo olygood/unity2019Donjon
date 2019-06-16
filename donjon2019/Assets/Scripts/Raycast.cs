@@ -14,7 +14,7 @@ public class Raycast : MonoBehaviour
         {
             if (hit.transform.tag == "enemy1")
             {
-                Destroy(hit.transform.gameObject,3);
+                Destroy(hit.transform.gameObject,3.5f);
             }
         }
     }           
