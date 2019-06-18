@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy1
   - persoAnim
+  - Perso1Donjon1
   layers:
   - Default
   - TransparentFX
