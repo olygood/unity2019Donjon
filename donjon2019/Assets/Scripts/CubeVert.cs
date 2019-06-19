@@ -6,7 +6,7 @@ public class CubeVert : MonoBehaviour
 {
     // cube vert
     public float lifeVert = 9;
-    public int lifewonder = 100;
+    
     void Start()
     {
         

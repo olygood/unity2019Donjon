@@ -7,12 +7,21 @@ public class CubeRouge : MonoBehaviour
     
     void Start()
     {
-        GameObject.Find("cubevert").GetComponent<CubeVert>().lifeVert -= 5;
+       
     }
-
     
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "cubevert")
+        {
+            Debug.Log("touche cubevert");
+            GameObject.Find("cubevert").GetComponent<CubeVert>().lifeVert -= 1;
+        }
+        
+    }
     void Update()
     {
-        GameObject.Find("cubevert").GetComponent<CubeVert>().lifeVert += 0.01f;
+     
     }
 }

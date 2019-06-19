@@ -9,7 +9,7 @@ public class PersoDonjon1 : MonoBehaviour
         Debug.Log("je touche le cube rouge : " + col.gameObject.tag);
         if(col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<Perso>().life -= 3;
+            GameObject.Find("player").GetComponent<Perso>().life -= 3;
         }
        
     }
